@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: sp-regular;
+    src: url('./static/LeagueSpartan-Regular.ttf');
+}
+
+@font-face {
+    font-family: sp-bold;
+    src: url('./static/LeagueSpartan-Bold.ttf');
+}
+
+@font-face {
+    font-family: sp-medium;
+    src: url('./static/LeagueSpartan-Medium.ttf');
+}
+
+@font-face {
+    font-family: sp-semibold;
+    src: url('./static/LeagueSpartan-SemiBold.ttf');
+}
+
+#div1{
+    background-image: url('./images/bg-header-desktop.svg');
+    width: 100%;
+    height: 150px;
+    background-color: hsl(180, 29%, 50%);
+    margin-bottom: 50px;
+}
+
+body{
+    background-color: hsl(180, 52%, 96%);
+}
+
+/* #maindiv{
+    margin-top: -40px;
+} */
+
+.listing{
+    width: 80%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+    align-items: center;
+}
+
+.img1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.div2{
+    display: flex;
+}
+
+.job-det{
+    display: flex;
+}
+
+.job-info{
+    display: flex;
+    font-family: sp-regular;
+    padding-top: 8px;
+    color: hsl(180, 29%, 50%);
+    gap: 10px;
+}
+
+.job{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.nae{
+    color: hsl(180, 29%, 50%);
+    font-family: sp-semibold;
+    padding-right: 10px;
+    align-content: center;
+}
+
+.naf{
+    font-family: sp-semibold;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding-top: 3px;
+    height: 22px;
+    align-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+.nag{
+    font-family: sp-semibold;
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    padding-top: 3px;
+    height: 22px;
+    align-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-left: 7px;
+}
+
+.jp{
+    font-family: sp-semibold;
+    color: hsl(180, 14%, 20%);
+    padding-top: 8px;
+}
+
+.span1{
+    font-family: sp-semibold;
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 52%, 96%);
+    padding: 7px;
+    margin-left: 4px;
+    border-radius: 4px;
+}
+
+.span1:hover{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    cursor: pointer;
+}
+
+.jp:hover{
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+#select-div{
+    width: 80%;
+    height: 60px;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    margin-left: 135px;
+    top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+}
+
+#d2{
+    color: hsl(180, 29%, 50%);
+    text-decoration: underline;
+    font-family: sp-regular;
+    cursor: pointer;
+}
+
+#d1{
+    display: flex;
+}
+
+.filter{
+    display: flex;
+    margin-left: 10px;
+}
+
+.db{
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 52%, 96%);
+    font-family: sp-semibold;
+    padding: 5px;
+}
+
+.remove{
+    /* background-image: url('./images/icon-remove.svg'); */
+    background-color: hsl(180, 29%, 50%);
+    height: 25px;
+    width: 25px;
+    align-content: center;
+    cursor: pointer;
+    /* object-fit:fill; */
+    /* background-size: contain;
+    background-position: center; */
+}
+
+.remove img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+@media only screen and (max-width:600px) {
+    .listing{
+        display: block;
+        height: auto;
+        margin-bottom: 35px;
+        padding-bottom: 15px;
+    }
+
+    .img1{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        z-index: 3;
+        bottom: 15px;
+    }
+
+    .div2{
+        width: 100%;
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .job{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+        height: 100%;
+        margin-top: -15px;
+    }
+
+    .job-det{
+        width: 100%;
+    }
+
+    .div3{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .span1{
+        /* padding-left: 0px;
+        padding-right: 5px; */
+        margin-left: 0px;
+    }
+
+    #select-div{
+        margin-left: 35px;
+        overflow-x: auto;
+    }
+
+    #d2{
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:840px) {
+    .listing{
+        display: flex;
+        height: auto;
+        margin-bottom: 35px;
+        padding-bottom: 15px;
+    }
+
+    .img1{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        z-index: 3;
+        bottom: 15px;
+    }
+
+    .div2{
+        width: 100%;
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .job{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+        height: 100%;
+        margin-top: -15px;
+    }
+
+    .job-det{
+        width: 100%;
+    }
+
+    .div3{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .span1{
+        /* padding-left: 0px;
+        padding-right: 5px; */
+        margin-left: 0px;
+    }
+
+    #select-div{
+        margin-left: 75px;
+        overflow-x: auto;
+    }
+
+    #d2{
+        padding-left: 20px;
+    }
+}
+
