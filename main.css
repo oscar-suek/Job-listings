@@ -190,6 +190,11 @@ body{
     background-position: center; */
 }
 
+.remove:hover{
+    cursor: pointer;
+    background-color: hsl(180, 14%, 20%);
+}
+
 .remove img{
     width: 15px;
     height: 15px;
